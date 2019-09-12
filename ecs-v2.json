@@ -1,0 +1,24 @@
+{
+  "containerDefinitions": [
+   {
+     "name": "wp-widiani",
+     "image": "widiani2103/wordpress:1.0.1.BUILD_NUMBER",
+     "cpu": 0,
+     "memory": 128,
+     "portMappings": [
+       {
+         "containerPort": 80
+       }
+     ],
+     "dockerLabels": {
+       "container" : "wp-widiani",
+       "environtment" : "development"
+      },
+      "logConfiguration" : {
+        "logDriver": "json-file",
+        "options": {
+          "labels" : "container, environment"
+        }
+     }
+   }]
+}
