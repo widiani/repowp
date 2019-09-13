@@ -2,7 +2,7 @@
   "containerDefinitions": [
    {
      "name": "wp-widiani",
-     "image": "widiani2103/wordpress:latest",
+     "image": "wordpress:latest",
      "cpu": 0,
      "memory": 128,
      "portMappings": [
